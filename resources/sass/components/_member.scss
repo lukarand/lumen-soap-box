@@ -1,0 +1,11 @@
+.team-member {
+  form {
+    .form-group {
+      input {
+        @include media-breakpoint-up('lg') {
+          width: (832px - 41px)/3 !important;
+        }
+      }
+    }
+  }
+}

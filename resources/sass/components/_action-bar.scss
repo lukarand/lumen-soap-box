@@ -1,0 +1,17 @@
+.team-member-action {
+  display: flex;
+  justify-content: space-between;
+  .action-bar {
+    button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      background-color: $purple;
+      border: none;
+    }
+  }
+}

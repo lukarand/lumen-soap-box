@@ -1,0 +1,15 @@
+.masonry-grid {
+  .masonry-grid-item {
+    width: 100%;
+    padding-bottom: 15px;
+    @include media-breakpoint-up('md') {
+      width: 320px;
+    }
+    @include media-breakpoint-up('lg') {
+      width: 276px;
+    }
+    @include media-breakpoint-up('xl') {
+      width: 337px;
+    }
+  }
+}

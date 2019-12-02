@@ -1,0 +1,33 @@
+.profile-step {
+  .step-header {
+    margin-bottom: 42px;
+
+    .header-right {
+      display: flex;
+      align-items: center;
+
+      div {
+        font-size: 13px;
+        color: $gray;
+        margin-right: 15px;
+      }
+
+      i {
+        color: $success;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .find-location {
+    margin-bottom: 50px;
+  }
+
+  .business-listing {
+    margin-bottom: 50px;
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+}

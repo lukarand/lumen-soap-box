@@ -1,0 +1,22 @@
+.modal-team-add {
+  top: 100px;
+  position: relative;
+  .modal-body {
+    padding: 50px;
+    .react-tel-input {
+      .form-control {
+        height: 45px;
+        border-radius: 4.8px;
+      }
+    }
+    @include media-breakpoint-down('md') {
+      padding: 20px;
+    }
+  }
+  .modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+}

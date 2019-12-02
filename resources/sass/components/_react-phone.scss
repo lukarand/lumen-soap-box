@@ -1,0 +1,17 @@
+.react-tel-input {
+  text-align: left;
+  input[type=text], input[type=tel] {
+    &.form-control {
+      border-radius: 0;
+      border: 1px solid #ced4da;
+      width: 100%;
+      padding-left: 48px !important;
+    }
+  }
+  .flag-dropdown {
+    border-radius: 0;
+  }
+  .selected-flag {
+    border-radius: 0;
+  }
+}

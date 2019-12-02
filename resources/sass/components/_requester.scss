@@ -1,0 +1,15 @@
+.request-add {
+  form {
+    @include media-breakpoint-down('sm') {
+      display: flex;
+    }
+
+    .form-group {
+      input {
+        @include media-breakpoint-up('lg') {
+          width: calc((832px - 41px)/2) !important;
+        }
+      }
+    }
+  }
+}

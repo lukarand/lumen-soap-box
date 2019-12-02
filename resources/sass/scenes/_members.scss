@@ -1,0 +1,15 @@
+.members {
+  .step-header {
+    margin-bottom: 36px;
+  }
+
+  .team-members {
+    margin-bottom: 50px;
+  }
+
+  @include media-breakpoint-down('md') {
+    .btn-lg {
+      padding: 10.5px 18px;
+    }
+  }
+}

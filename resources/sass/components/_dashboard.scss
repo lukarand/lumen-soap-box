@@ -1,0 +1,65 @@
+.download-card {
+  background-image: url('../img/download-image.svg');
+  background-size: cover;
+  background-position: right bottom;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    background-image: none;
+  }
+
+  .download-content {
+    .header-title {
+      margin-bottom: 20px;
+    }
+
+    .download-text {
+      margin-bottom: 20px;
+    }
+
+    .button-groups {
+      button {
+        @include media-breakpoint-down('md') {
+          padding: 10.5px 24px;
+        }
+      }
+    }
+  }
+}
+
+.download-customers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-down('md') {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .customer {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
+
+  @include media-breakpoint-down('sm') {
+    .customer {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+.quick-request {
+  form {
+    .form-group {
+      button {
+        i {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}

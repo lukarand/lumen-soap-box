@@ -1,0 +1,28 @@
+.monthly-switch {
+  label {
+    display: flex;
+    align-items: center;
+
+    .react-switch-bg {
+      background: $success !important;
+    }
+
+    .react-switch {
+      margin: 0 10px;
+
+      .react-switch-handle {
+        width: 20px !important;
+        height: 20px !important;
+        top: 2px !important;
+      }
+    }
+
+    span {
+      font-size: 13px;
+
+      &.active {
+        color: $gray-600;
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+.card {
+  padding: 50px;
+  box-shadow: 0 0 25px rgba($gray, 0.1);
+
+  @include media-breakpoint-down('md') {
+    padding: 20px;
+  }
+}
+
+.step-card {
+  max-width: 932px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-breakpoint-down('md') {
+    .step-header {
+      flex-wrap: wrap;
+    }
+  }
+
+  .step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.review-card {
+  padding: 0;
+  .card-body {
+    padding: 30px;
+    text-align: center;
+    .photo {
+      text-align: center;
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 36px;
+      }
+    }
+    .name {
+      color: $secondary;
+      margin-top: 15px;
+      text-transform: capitalize;
+      font-weight: $font-weight-bold;
+    }
+    .reviewed-at {
+      color: $text-muted;
+      font-size: $font-size-sm;
+    }
+    .score {
+      display: inline-block;
+    }
+    .review-text {
+      color: $dark;
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
+  .card-footer {
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    color: $white;
+    background-color: $gray;
+    &:hover {
+      background-color: $success;
+    }
+    transition: all .3s;
+  }
+}
+
+.member-card {
+  padding: 0;
+  position: relative;
+  margin-bottom: 50px;
+  input {
+    padding: 3px 12px;
+    height: 32px;
+  }
+  .member-delete {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .member-edit {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .card-body {
+    padding: 30px;
+    text-align: center;
+    &.data-editable {
+      padding-bottom: 12px;
+      .mobile {
+        height: auto !important;
+      }
+    }
+    .photo {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      max-width: 75px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      .photo-upload {
+        position: absolute;
+        right: -10px;
+        top: 0;
+      }
+      img {
+        width: 75px;
+        height: 75px;
+        border-radius: 75px;
+      }
+      .avatar-text {
+        width: 75px;
+        height: 75px;
+        border-radius: 75px;
+        background-color: $gray-300;
+        color: $primary;
+        text-transform: uppercase;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: $font-weight-bold;
+      }
+    }
+    .name {
+      font-size: 18px;
+      font-weight: $font-weight-bold;
+      margin-bottom: 7px;
+      color: $gray-800;
+    }
+    .email {
+      font-size: 13px;
+      color: $gray;
+      margin-bottom: 7px;
+    }
+    .mobile {
+      font-size: 13px;
+      color: $gray;
+      margin-bottom: 21px;
+      height: 19px;
+      .react-tel-input {
+        input {
+          height: 32px;
+        }
+      }
+    }
+    .requests-ranking {
+      display: flex;
+      justify-content: space-between;
+      .requests {
+        padding: 16px;
+        text-align: center;
+        background-color: $white;
+        .title {
+          color: $gray;
+          font-size: 13px;
+          margin-bottom: 3px;
+        }
+        .request {
+          font-size: 30px;
+          color: $secondary;
+          font-weight: $font-weight-bold;
+        }
+      }
+      .ranking {
+        padding: 16px;
+        text-align: center;
+        background-color: $white;
+        .title {
+          color: $gray;
+          font-size: 13px;
+          margin-bottom: 3px;
+        }
+        .content {
+          font-size: 30px;
+          color: $secondary;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+  .card-footer {
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: $primary;
+    background-color: $success;
+    &:hover {
+      background-color: $gray;
+      color: $white;
+    }
+    transition: all .3s;
+  }
+}
