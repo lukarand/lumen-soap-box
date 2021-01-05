@@ -24,7 +24,7 @@
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
-        "axios": "^0.18",
+        "axios": "^0.21",
         "bootstrap": "^4.0.0",
         "formik": "^1.5.2",
         "history": "^4.9.0",
